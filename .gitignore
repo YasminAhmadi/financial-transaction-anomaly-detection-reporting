@@ -1,0 +1,26 @@
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*.so
+*.dylib
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local tooling
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.DS_Store
+
+# Data and outputs
+outputs/reports/*.pdf
+outputs/reports/*.xlsx
+data/raw/*.csv
+data/processed/*.csv
