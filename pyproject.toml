@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "financial-transaction-anomaly-detection"
+version = "0.1.0"
+description = "End-to-end AR transaction anomaly detection and reporting pipeline"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Your Name" }
+]
+dependencies = [
+  "numpy>=1.26.0",
+  "pandas>=2.2.0",
+  "scikit-learn>=1.4.0",
+  "matplotlib>=3.8.0",
+  "xlsxwriter>=3.2.0",
+  "requests>=2.31.0"
+]
+
+[project.scripts]
+run-financial-anomaly-pipeline = "financial_anomaly_detection.pipeline_cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
